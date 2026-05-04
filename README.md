@@ -1,45 +1,24 @@
-<div align="center">
+# 💫 About Me:
+Hi, I'm Kevin Nordkvist — a passionate developer with a strong interest in building things for the web and beyond. I enjoy creating clean, user-focused solutions ranging from interactive web experiences to backend systems and plugins.<br><br>I've worked across the stack — from building terminal-style portfolio sites in Next.js and TypeScript, to crafting AI-powered apps with Python and Flask, to developing Minecraft plugins in Java. I'm always looking to learn new tools and sharpen my craft.<br><br>When I'm not coding, I'm into gaming, self-improvement, and tinkering with my Linux setup.
 
-# Hey, I'm Kevin 👋
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kevin-nordkvist-537231222/) [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?logo=vercel&logoColor=white)](https://kevinnordkvist.dev)
 
-**Full-stack developer** who builds things for the web — and occasionally Minecraft.
-
-[![Portfolio](https://img.shields.io/badge/kevinnordkvist.dev-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://kevinnordkvist.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kevin-nordkvist-537231222/)
-
-</div>
-
----
-
-### Tech Stack
-
-**Frontend**
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
-**Backend & Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-
----
-
-### Projects
-
-| | Project | Description |
-|---|---------|-------------|
-| 🌐 | [**portfolio**](https://github.com/keppangithub/portfolio) | Terminal-style portfolio built with Next.js + TypeScript |
-| 🎵 | [**spotifeel**](https://github.com/keppangithub/spotifeel) | AI-powered Spotify playlists based on your mood (Flask + OpenAI) |
-| 🟩 | [**minecraft-homeandtp**](https://github.com/keppangithub/minecraft-homeandtp) | Lightweight Minecraft plugin for home & teleportation |
-
----
+# 💻 Tech Stack:
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=keppangithub&show_icons=true&theme=tokyonight&hide_border=true&hide_title=true)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=keppangithub&theme=blue_navy&hide_border=false&include_all_commits=false&count_private=false)
+<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=keppangithub&theme=blue_navy&hide_border=false)
+<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=keppangithub&theme=blue_navy&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=vetical&theme=radical)
+
+---
+[![](https://visitcount.itsvg.in/api?id=keppangithub&icon=0&color=1)](https://visitcount.itsvg.in)
 </div>
