@@ -16,17 +16,13 @@ USER = "kevin"
 HOST = "github"
 CARD = [
     ("Name", "Kevin Nordkvist"),
-    ("Role", "Full-stack developer"),
-    ("Now", "Building for the web and beyond"),
-    ("Web", "Terminal-style portfolio in Next.js + TS"),
-    ("AI", "AI-powered apps with Python + Flask"),
-    ("Plugins", "Minecraft plugins in Java"),
+    ("Role", "CTO @ Thea Labs"),
     ("Stack", "TypeScript, JavaScript, Python, Java, C++"),
     ("Frontend", "React, Next.js, Tailwind CSS, HTML5"),
     ("Backend", "Node.js, Flask, PostgreSQL"),
     ("Tools", "Git, Docker, Linux, Vercel, Figma, Postman"),
-    ("Off-hours", "Gaming, self-improvement, tinkering with Linux"),
     ("Portfolio", "kevinnordkvist.dev"),
+    ("LinkedIn", "in/kevin-nordkvist-537231222"),
 ]
 
 WIDTH = 490

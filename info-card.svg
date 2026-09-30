@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="490" height="422" viewBox="0 0 490 422" role="img" aria-label="kevin@github info card">
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="334" viewBox="0 0 490 334" role="img" aria-label="kevin@github info card">
 <style>.ln{opacity:0;animation:in .45s ease-out forwards}@keyframes in{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:translateX(0)}}</style>
-<rect x="0.5" y="0.5" width="489" height="421" rx="10" fill="#0d1117" stroke="#30363d"/>
+<rect x="0.5" y="0.5" width="489" height="333" rx="10" fill="#0d1117" stroke="#30363d"/>
 <path d="M0.5 30 V10.5 A10 10 0 0 1 10.5 0.5 H479.5 A10 10 0 0 1 489.5 10.5 V30 Z" fill="#161b22" stroke="#30363d"/>
 <circle cx="18" cy="15.5" r="5.5" fill="#ff5f57"/>
 <circle cx="36" cy="15.5" r="5.5" fill="#febc2e"/>
@@ -10,16 +10,12 @@
 <g transform="translate(0 56)"><g class="ln" style="animation-delay:0.30s"><text x="22" y="0"><tspan fill="#3fb950" font-weight="700">kevin</tspan><tspan fill="#c9d1d9">@</tspan><tspan fill="#58a6ff" font-weight="700">github</tspan></text></g></g>
 <g transform="translate(0 78)"><g class="ln" style="animation-delay:0.48s"><text x="22" y="0" fill="#8b949e">------------</text></g></g>
 <g transform="translate(0 100)"><g class="ln" style="animation-delay:0.66s"><text x="22" y="0" fill="#58a6ff" font-weight="700">Name</text><text x="118" y="0" fill="#c9d1d9">Kevin Nordkvist</text></g></g>
-<g transform="translate(0 122)"><g class="ln" style="animation-delay:0.84s"><text x="22" y="0" fill="#3fb950" font-weight="700">Role</text><text x="118" y="0" fill="#c9d1d9">Full-stack developer</text></g></g>
-<g transform="translate(0 144)"><g class="ln" style="animation-delay:1.02s"><text x="22" y="0" fill="#d2a8ff" font-weight="700">Now</text><text x="118" y="0" fill="#c9d1d9">Building for the web and beyond</text></g></g>
-<g transform="translate(0 166)"><g class="ln" style="animation-delay:1.20s"><text x="22" y="0" fill="#ffa657" font-weight="700">Web</text><text x="118" y="0" fill="#c9d1d9">Terminal-style portfolio in Next.js + TS</text></g></g>
-<g transform="translate(0 188)"><g class="ln" style="animation-delay:1.38s"><text x="22" y="0" fill="#79c0ff" font-weight="700">AI</text><text x="118" y="0" fill="#c9d1d9">AI-powered apps with Python + Flask</text></g></g>
-<g transform="translate(0 210)"><g class="ln" style="animation-delay:1.56s"><text x="22" y="0" fill="#ff7b72" font-weight="700">Plugins</text><text x="118" y="0" fill="#c9d1d9">Minecraft plugins in Java</text></g></g>
-<g transform="translate(0 232)"><g class="ln" style="animation-delay:1.74s"><text x="22" y="0" fill="#58a6ff" font-weight="700">Stack</text><text x="118" y="0" fill="#c9d1d9">TypeScript, JavaScript, Python, Java, C++</text></g></g>
-<g transform="translate(0 254)"><g class="ln" style="animation-delay:1.92s"><text x="22" y="0" fill="#3fb950" font-weight="700">Frontend</text><text x="118" y="0" fill="#c9d1d9">React, Next.js, Tailwind CSS, HTML5</text></g></g>
-<g transform="translate(0 276)"><g class="ln" style="animation-delay:2.10s"><text x="22" y="0" fill="#d2a8ff" font-weight="700">Backend</text><text x="118" y="0" fill="#c9d1d9">Node.js, Flask, PostgreSQL</text></g></g>
-<g transform="translate(0 298)"><g class="ln" style="animation-delay:2.28s"><text x="22" y="0" fill="#ffa657" font-weight="700">Tools</text><text x="118" y="0" fill="#c9d1d9">Git, Docker, Linux, Vercel, Figma, Postman</text></g></g>
-<g transform="translate(0 320)"><g class="ln" style="animation-delay:2.46s"><text x="22" y="0" fill="#79c0ff" font-weight="700">Off-hours</text><text x="118" y="0" fill="#c9d1d9">Gaming, self-improvement, tinkering with Linux</text></g></g>
-<g transform="translate(0 342)"><g class="ln" style="animation-delay:2.64s"><text x="22" y="0" fill="#ff7b72" font-weight="700">Portfolio</text><text x="118" y="0" fill="#c9d1d9">kevinnordkvist.dev</text></g></g>
-<g transform="translate(0 386)"><g class="ln" style="animation-delay:3.00s"><rect x="22" y="-4" width="22" height="16" rx="3" fill="#161b22"/><rect x="48" y="-4" width="22" height="16" rx="3" fill="#ff7b72"/><rect x="74" y="-4" width="22" height="16" rx="3" fill="#3fb950"/><rect x="100" y="-4" width="22" height="16" rx="3" fill="#d29922"/><rect x="126" y="-4" width="22" height="16" rx="3" fill="#58a6ff"/><rect x="152" y="-4" width="22" height="16" rx="3" fill="#bc8cff"/><rect x="178" y="-4" width="22" height="16" rx="3" fill="#39c5cf"/><rect x="204" y="-4" width="22" height="16" rx="3" fill="#c9d1d9"/></g></g>
+<g transform="translate(0 122)"><g class="ln" style="animation-delay:0.84s"><text x="22" y="0" fill="#3fb950" font-weight="700">Role</text><text x="118" y="0" fill="#c9d1d9">CTO @ Thea Labs</text></g></g>
+<g transform="translate(0 144)"><g class="ln" style="animation-delay:1.02s"><text x="22" y="0" fill="#d2a8ff" font-weight="700">Stack</text><text x="118" y="0" fill="#c9d1d9">TypeScript, JavaScript, Python, Java, C++</text></g></g>
+<g transform="translate(0 166)"><g class="ln" style="animation-delay:1.20s"><text x="22" y="0" fill="#ffa657" font-weight="700">Frontend</text><text x="118" y="0" fill="#c9d1d9">React, Next.js, Tailwind CSS, HTML5</text></g></g>
+<g transform="translate(0 188)"><g class="ln" style="animation-delay:1.38s"><text x="22" y="0" fill="#79c0ff" font-weight="700">Backend</text><text x="118" y="0" fill="#c9d1d9">Node.js, Flask, PostgreSQL</text></g></g>
+<g transform="translate(0 210)"><g class="ln" style="animation-delay:1.56s"><text x="22" y="0" fill="#ff7b72" font-weight="700">Tools</text><text x="118" y="0" fill="#c9d1d9">Git, Docker, Linux, Vercel, Figma, Postman</text></g></g>
+<g transform="translate(0 232)"><g class="ln" style="animation-delay:1.74s"><text x="22" y="0" fill="#58a6ff" font-weight="700">Portfolio</text><text x="118" y="0" fill="#c9d1d9">kevinnordkvist.dev</text></g></g>
+<g transform="translate(0 254)"><g class="ln" style="animation-delay:1.92s"><text x="22" y="0" fill="#3fb950" font-weight="700">LinkedIn</text><text x="118" y="0" fill="#c9d1d9">in/kevin-nordkvist-537231222</text></g></g>
+<g transform="translate(0 298)"><g class="ln" style="animation-delay:2.28s"><rect x="22" y="-4" width="22" height="16" rx="3" fill="#161b22"/><rect x="48" y="-4" width="22" height="16" rx="3" fill="#ff7b72"/><rect x="74" y="-4" width="22" height="16" rx="3" fill="#3fb950"/><rect x="100" y="-4" width="22" height="16" rx="3" fill="#d29922"/><rect x="126" y="-4" width="22" height="16" rx="3" fill="#58a6ff"/><rect x="152" y="-4" width="22" height="16" rx="3" fill="#bc8cff"/><rect x="178" y="-4" width="22" height="16" rx="3" fill="#39c5cf"/><rect x="204" y="-4" width="22" height="16" rx="3" fill="#c9d1d9"/></g></g>
 </g></svg>
