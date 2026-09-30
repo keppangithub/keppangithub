@@ -21,6 +21,7 @@ RAMP = " .`:-=+*cs#%@"  # sparse -> dense
 # the ramp and the white (removed) background maps to spaces.
 
 COLS = 100
+GAMMA = 1.25  # >1 deepens shadows so features stand out
 FONT_SIZE = 11
 CHAR_W = FONT_SIZE * 0.6  # monospace advance
 LINE_H = 12
@@ -44,8 +45,12 @@ def to_rows(img: Image.Image) -> list[str]:
     rows = max(1, round(h / w * COLS * CHAR_W / LINE_H))
     small = np.array(Image.fromarray(arr).resize((COLS, rows), Image.LANCZOS), dtype=np.float32)
     subject = small < 225
+    # Erode the mask by one cell: the cutout's soft edge is light gray and would
+    # otherwise draw a dense outline around the silhouette.
+    padded = np.pad(subject, 1, constant_values=False)
+    subject &= padded[:-2, 1:-1] & padded[2:, 1:-1] & padded[1:-1, :-2] & padded[1:-1, 2:]
     lo, hi = np.percentile(small[subject], [2, 98]) if subject.any() else (0.0, 255.0)
-    norm = ((small - lo) / max(hi - lo, 1.0)).clip(0.0, 1.0)
+    norm = ((small - lo) / max(hi - lo, 1.0)).clip(0.0, 1.0) ** GAMMA
     idx = (1 + norm * (len(RAMP) - 2)).round().astype(int)
     idx[~subject] = 0
     lines = ["".join(RAMP[i] for i in row).rstrip() for row in idx]
