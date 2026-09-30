@@ -21,6 +21,9 @@ RAMP = " .`:-=+*cs#%@"  # sparse -> dense
 # the ramp and the white (removed) background maps to spaces.
 
 COLS = 140
+# Sparsest glyph used inside the subject. Light-on-dark means dark features
+# (eyes, brows, beard) get the sparse end; a floor keeps them from reading as holes.
+FLOOR = RAMP.index("-")
 GAMMA = 1.0  # >1 deepens shadows, <1 lifts them
 FONT_SIZE = 11
 CHAR_W = FONT_SIZE * 0.6  # monospace advance
@@ -56,7 +59,7 @@ def to_rows(img: Image.Image) -> list[str]:
     subject &= padded[:-2, 1:-1] & padded[2:, 1:-1] & padded[1:-1, :-2] & padded[1:-1, 2:]
     lo, hi = np.percentile(small[subject], [2, 98]) if subject.any() else (0.0, 255.0)
     norm = ((small - lo) / max(hi - lo, 1.0)).clip(0.0, 1.0) ** GAMMA
-    idx = (1 + norm * (len(RAMP) - 2)).round().astype(int)
+    idx = (FLOOR + norm * (len(RAMP) - 1 - FLOOR)).round().astype(int)
     idx[~subject] = 0
     lines = ["".join(RAMP[i] for i in row).rstrip() for row in idx]
     while lines and not lines[-1]:
