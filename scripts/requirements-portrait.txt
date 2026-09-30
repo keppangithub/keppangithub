@@ -1,0 +1,6 @@
+# Only needed locally when regenerating the ASCII portrait from a new photo
+-r requirements.txt
+pillow
+numpy
+opencv-python
+rembg[cpu]
