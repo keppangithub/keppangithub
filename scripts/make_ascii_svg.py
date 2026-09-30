@@ -20,14 +20,14 @@ RAMP = " .`:-=+*cs#%@"  # sparse -> dense
 # Glyphs are drawn light-on-dark, so bright skin/highlights get the dense end of
 # the ramp and the white (removed) background maps to spaces.
 
-COLS = 100
-GAMMA = 1.25  # >1 deepens shadows so features stand out
+COLS = 140
+GAMMA = 1.0  # >1 deepens shadows, <1 lifts them
 FONT_SIZE = 11
 CHAR_W = FONT_SIZE * 0.6  # monospace advance
 LINE_H = 12
 PAD = 18
 NBSP = "\u00a0"  # renderers collapse plain leading spaces
-FG = "#c9d1d9"
+FG = "#e6edf3"
 BG = "#0d1117"
 BORDER = "#30363d"
 ROW_DURATION = 0.35  # seconds for one row to wipe across
@@ -37,14 +37,19 @@ FONT = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monos
 
 def to_rows(img: Image.Image) -> list[str]:
     arr = np.array(img.convert("L"))
-    # Crop to the subject (anything noticeably darker than white).
-    ys, xs = np.where(arr < 245)
+    if "A" in img.getbands():
+        mask = np.array(img.getchannel("A"))
+    else:  # no cutout mask: treat anything noticeably darker than white as subject
+        mask = np.where(arr < 225, 255, 0).astype(np.uint8)
+    # Crop to the subject.
+    ys, xs = np.where(mask > 128)
     if len(xs):
         arr = arr[ys.min() : ys.max() + 1, xs.min() : xs.max() + 1]
+        mask = mask[ys.min() : ys.max() + 1, xs.min() : xs.max() + 1]
     h, w = arr.shape
     rows = max(1, round(h / w * COLS * CHAR_W / LINE_H))
     small = np.array(Image.fromarray(arr).resize((COLS, rows), Image.LANCZOS), dtype=np.float32)
-    subject = small < 225
+    subject = np.array(Image.fromarray(mask).resize((COLS, rows), Image.BILINEAR)) > 160
     # Erode the mask by one cell: the cutout's soft edge is light gray and would
     # otherwise draw a dense outline around the silhouette.
     padded = np.pad(subject, 1, constant_values=False)
@@ -83,7 +88,7 @@ def build_svg(lines: list[str], static: bool) -> str:
             )
         out.append("</defs>")
     out.append(
-        f'<g font-family="{FONT}" font-size="{FONT_SIZE}" fill="{FG}">'
+        f'<g font-family="{FONT}" font-size="{FONT_SIZE}" font-weight="700" fill="{FG}">'
     )
     for i, line in enumerate(lines):
         if not line:

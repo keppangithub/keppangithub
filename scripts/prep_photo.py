@@ -2,7 +2,8 @@
 
 1. Remove the background with rembg so only the subject remains.
 2. Boost local contrast with OpenCV CLAHE so a flat face gets real highlights/shadows.
-3. Composite onto pure white so the background maps to the blank end of the ramp.
+3. Composite onto pure white so the background maps to the blank end of the ramp,
+   keeping the cutout mask as the PNG's alpha channel.
 
 Usage: python scripts/prep_photo.py source-photo.jpg [out.png]
 """
@@ -32,7 +33,10 @@ def main() -> None:
     gray = clahe.apply(gray).astype(np.float32)
 
     composited = gray * alpha + 255.0 * (1.0 - alpha)
-    Image.fromarray(composited.clip(0, 255).astype(np.uint8), "L").save(out)
+    # Keep the cutout mask as the alpha channel: bright highlights on the face
+    # are near-white too, so brightness alone can't tell subject from background.
+    prepped = np.dstack([composited.clip(0, 255), rgba[:, :, 3]]).astype(np.uint8)
+    Image.fromarray(prepped, "LA").save(out)
     print(f"wrote {out.relative_to(ROOT) if out.is_relative_to(ROOT) else out}")
 
 
