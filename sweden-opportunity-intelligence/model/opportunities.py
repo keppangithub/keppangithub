@@ -232,7 +232,7 @@ O(id=13, name="Platform-neutral practice OS for small accounting firms",
   uncertainty="Fortnox API/partner terms can cut off access; low per-firm budgets",
   validation="Interview 25 firm owners; pre-sell 10 annual licences", origin="Original finding",
   tags=["Software", "Recurring revenue"],
-  scores=dict(demand=7, wtp=5, timing=7, gap=5, unit=7, speed=5, capeff=6, scale=7, feas=6),
+  scores=dict(demand=7, wtp=5, timing=8, gap=6, unit=7, speed=5, capeff=6, scale=7, feas=6),
   confidence="Medium", n_sources=5, assumption="Firms will pay for another tool on top of Fortnox", wrong="Platform risk; Fortnox/EQT can bundle or block.")
 
 O(id=14, name="AI 'digital junior' for bookkeeping and year-end prep, sold per client file to accounting firms",
@@ -367,7 +367,7 @@ O(id=24, name="LOV/hemtjänst spend follow-up analytics",
   competitors="Adda framework consultants, system vendors", capital=1_000_000, tech="Data integration with TES/Lifecare", reg="Socialtjänstlag, GDPR (sensitive data)",
   market="~180 LOV municipalities", uncertainty="Data access via incumbents", validation="Pilot with 1 municipality", origin="Original finding",
   tags=["Software", "Public-sector dependent", "Recurring revenue"],
-  scores=dict(demand=5, wtp=5, timing=6, gap=6, unit=6, speed=4, capeff=5, scale=5, feas=4),
+  scores=dict(demand=5, wtp=5, timing=6, gap=7, unit=6, speed=4, capeff=5, scale=5, feas=4),
   confidence="Low", n_sources=3, assumption="Data accessible", wrong="Sensitive data and incumbents block access.")
 
 O(id=25, name="Bid-competition insight product for public buyers (single-bid early warning)",
@@ -391,7 +391,7 @@ O(id=26, name="Municipal packaging-compensation reporting & kerbside-rollout ope
   reg="Förpackningsförordningen; LOU", market="~150-290 buyers x SEK 200k = SEK 30-60m/yr",
   uncertainty="Incumbent waste systems add modules; procurement cycles", validation="Interview 10 waste companies; 2 paid pilots",
   origin="Original finding", tags=["Software", "Recurring revenue", "Public-sector dependent"],
-  scores=dict(demand=6, wtp=6, timing=8, gap=5, unit=6, speed=4, capeff=5, scale=4, feas=5),
+  scores=dict(demand=6, wtp=6, timing=8, gap=3, unit=6, speed=3, capeff=5, scale=4, feas=5),
   confidence="Medium", n_sources=4, assumption="Incumbent systems don't cover compensation reporting", wrong="Small SAM and incumbent EDP integrates feature.")
 
 # ---------------------------------------------------------------------------
@@ -408,7 +408,7 @@ O(id=27, name="BRF compliance & maintenance-plan copilot (self-managed boards)",
   market="30k BRFs x 10% adoption x SEK 4.8k = SEK 14m/yr (low ARPU)", uncertainty="Low WTP; managers bundle",
   validation="Facebook/BRF forum ads; 100 paying boards in 90 days", origin="Original finding",
   tags=["Software", "Bootstrappable", "Recurring revenue"],
-  scores=dict(demand=6, wtp=4, timing=6, gap=4, unit=5, speed=7, capeff=7, scale=6, feas=8),
+  scores=dict(demand=6, wtp=4, timing=6, gap=5, unit=5, speed=7, capeff=7, scale=6, feas=8),
   confidence="Medium", n_sources=5, assumption="Boards pay for software separately", wrong="Boappa/Nabo already cover most of it.")
 
 O(id=28, name="Bundled building-compliance inspection subscription (OVK + energy declaration + EPBD HVAC inspection + radon)",
@@ -423,7 +423,7 @@ O(id=28, name="Bundled building-compliance inspection subscription (OVK + energy
   market="Large but commoditised; see W08", uncertainty="Price competition; certification capacity",
   validation="Offer bundle to 50 BRFs in one city", origin="Original finding",
   tags=["Hybrid", "Physical operations", "Regulated", "Recurring revenue"],
-  scores=dict(demand=6, wtp=6, timing=7, gap=5, unit=5, speed=6, capeff=5, scale=5, feas=6),
+  scores=dict(demand=5, wtp=6, timing=5, gap=5, unit=5, speed=6, capeff=5, scale=5, feas=6),
   confidence="Medium", n_sources=4, assumption="Bundling wins vs cheapest local inspector", wrong="Commodity service with highly competitive pricing.")
 
 O(id=29, name="OVK/SBA inspection field app for inspection firms",
@@ -514,7 +514,7 @@ O(id=36, name="Orphaned solar/battery aftercare network (post-installer-bankrupt
   market="~314k plants; addressable orphaned subset unknown", uncertainty="Size of orphaned base and conversion rate",
   validation="Buy one small estate's customer list; measure conversion", origin="Foreign model (Otovo) + original",
   tags=["Hybrid", "Physical operations", "Recurring revenue"],
-  scores=dict(demand=5, wtp=5, timing=7, gap=6, unit=5, speed=5, capeff=5, scale=5, feas=5),
+  scores=dict(demand=5, wtp=5, timing=7, gap=4, unit=5, speed=5, capeff=5, scale=5, feas=5),
   confidence="Low", n_sources=4, assumption="Orphaned owners convert at >10%", wrong="Electrician shortage; homeowners only pay on failure.")
 
 O(id=37, name="Grid-connection case management for small DSOs",
@@ -526,7 +526,7 @@ O(id=37, name="Grid-connection case management for small DSOs",
   capital=1_500_000, tech="Grid data integration (NIS/GIS)", reg="Ellagen; NIS2 for DSOs", market="~140 x SEK 200k = SEK 28m/yr",
   uncertainty="Small SAM; incumbent utility IT", validation="Interview 15 DSOs", origin="Original finding",
   tags=["Software", "Recurring revenue", "High international expansion potential"],
-  scores=dict(demand=5, wtp=6, timing=7, gap=5, unit=6, speed=4, capeff=5, scale=6, feas=5),
+  scores=dict(demand=5, wtp=6, timing=7, gap=4, unit=6, speed=4, capeff=5, scale=6, feas=5),
   confidence="Low", n_sources=3, assumption="DSO pain is unsolved", wrong="Tiny SAM; utility-IT incumbents.", intl=True)
 
 O(id=38, name="Independent grid-connection consultancy for C&I, depots and BESS",
@@ -572,7 +572,7 @@ O(id=41, name="EV battery-health (SoH) certificate workflow for small used-car d
   decision_maker="Dealer", competitors="Dekra, Aviloo, Bilprovningen/Opus", capital=700_000, tech="OBD/test hardware partnerships",
   reg="Goods declaration rules", market="Used EV transactions (to verify)", uncertainty="Dekra/Aviloo capture",
   validation="Sell 100 tests to 10 dealers", origin="Original finding", tags=["Hybrid", "Physical operations"],
-  scores=dict(demand=5, wtp=4, timing=7, gap=3, unit=5, speed=6, capeff=6, scale=4, feas=7),
+  scores=dict(demand=5, wtp=4, timing=7, gap=2, unit=5, speed=6, capeff=6, scale=4, feas=7),
   confidence="Medium", n_sources=4, assumption="Small dealers will pay per test", wrong="Incumbents already have it; commodity pricing.")
 
 O(id=42, name="Used-car dealer warranty & dispute-compliance layer",
