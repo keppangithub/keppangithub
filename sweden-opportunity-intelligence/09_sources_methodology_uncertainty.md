@@ -165,4 +165,4 @@ The full TAM/SAM/SOM inputs and outputs for the top 20 are in the spreadsheet ([
 - **SAM** = 50% (small and mid-size organisations outside large-city frameworks) = **SEK 107m**.
 - **SOM** = 40 customers × SEK 330k = **SEK 13.2m/year**, which is 12% of SAM in 3–5 years.
 
-Because 12% of SAM is ambitious for a new entrant, the 36-month financial model assumes fewer customers (about 37 active by month 36 in the base case).
+The 36-month financial model reaches about 41 active customers by month 36 in the base case, which matches the SOM. That is ambitious: about 12% of SAM for a new entrant. The downside sensitivities therefore matter more than the base case.
