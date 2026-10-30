@@ -6,7 +6,7 @@
 
 ## 1. Bibliography and source ledger
 
-All 619 cited sources are in **[`output/source_index.csv`](output/source_index.csv)**: one row per URL per workstream, with publisher, title, publication date, data period, finding and reliability, as recorded in each workstream's ledger. The full ledgers, with retrieval dates, are at the end of each research file:
+All 634 cited sources are in **[`output/source_index.csv`](output/source_index.csv)**: one row per URL per workstream, with publisher, title, publication date, data period, finding and reliability, as recorded in each workstream's ledger. The full ledgers, with retrieval dates, are at the end of each research file:
 
 | Code | Workstream | File | Ledger size |
 |---|---|---|---|
