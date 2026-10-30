@@ -10,7 +10,7 @@ SIZING = {
     4: dict(buyers=(500, 711, 1000), buyer_basis="290 municipalities + 21 regions + ~400 municipal companies/ports/utilities (assumption on companies); private säkerhetskänsliga operators in high case",
             spend=(150_000, 300_000, 600_000), spend_basis="External preparedness/säkerhetsskydd advice per org/yr; Uppsala advertised SEK 100m over up to 4 years (W07 Area 2) is a large-city outlier; state grants SEK 739m to municipalities in 2025 (W07)",
             sam_share=0.5, sam_basis="Small/mid organisations outside large-city frameworks", som_customers=40, som_arpa=330_000),
-    1: dict(buyers=(1_500, 4_000, 8_000), buyer_basis="Government estimate 'drygt 1,500 företag' >=50 FTE (W03 S39) vs secondary 5,000-8,000 entities incl. public (W02 §2.1) - contradictory",
+    1: dict(buyers=(1_500, 1_810, 4_000), buyer_basis="MCF impact assessment: ~1,500 companies + 310 municipalities/regions (W10 §0.3); high case allows secondary 5-8k estimates (W02 §2.1) partially",
             spend=(150_000, 250_000, 400_000), spend_basis="Ongoing NIS2 advisory SEK 10-30k/month (W07 benchmarks, L-M) + tooling 30-200k/yr (W07, L)",
             sam_share=0.3, sam_basis="Municipal companies and 50-500 FTE entities willing to buy fixed-price bundles", som_customers=60, som_arpa=250_000),
     6: dict(buyers=(400, 800, 1_500), buyer_basis="SOFF 400-500 members (W07 Area 3) + non-member aspirants (assumption)",

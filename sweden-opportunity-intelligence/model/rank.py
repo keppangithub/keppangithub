@@ -16,14 +16,15 @@ def is_software_only(o):
 
 
 def views(opps, key="score"):
+    S = lambda o: o.get("scores_post", o["scores"])
     by = lambda f, sk=lambda o: o[key]: sorted([o for o in opps if f(o)], key=sk, reverse=True)
     return {
         "Best overall": by(lambda o: True),
         "Best bootstrap businesses (<= SEK 1m capital)": by(lambda o: o["capital"] <= 1_000_000 and "Capital intensive" not in o["tags"]),
-        "Fastest path to first revenue": by(lambda o: True, lambda o: (o["scores"]["speed"], o[key])),
+        "Fastest path to first revenue": by(lambda o: True, lambda o: (S(o)["speed"], o[key])),
         "Best technical-founder opportunities": by(lambda o: "Software" in o["tags"] or "Hybrid" in o["tags"],
-                                                   lambda o: o[key] + 2 * (o["scores"]["scale"] - 5) * ("Software" in o["tags"])),
-        "Highest defensibility": by(lambda o: True, lambda o: (o["scores"]["scale"] + o["scores"]["gap"], o[key])),
+                                                   lambda o: o[key] + 2 * (S(o)["scale"] - 5) * ("Software" in o["tags"])),
+        "Highest defensibility (score >= 50)": by(lambda o: o[key] >= 50, lambda o: (S(o)["scale"] + S(o)["gap"], o[key])),
         "Best international scaling potential": by(lambda o: o["intl"]),
         "Best non-software opportunities": by(lambda o: not is_software_only(o) and ("Physical operations" in o["tags"] or "Hybrid" in o["tags"] or "Marketplace" in o["tags"])),
     }
