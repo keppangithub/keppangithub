@@ -105,7 +105,7 @@ O(id=4, name="Säkerhetsskydd & civil-defence planning retainer for municipaliti
   market="~600-1,000 public/municipal organisations + private säkerhetskänslig operators", uncertainty="Founders' credibility and clearance; buyers prefer known consultancies",
   validation="Pitch 15 small municipalities a fixed-price 'civilt försvar 2027-pack' funded from MCF grant; target 2 signed orders",
   origin="Original finding", tags=["Bootstrappable", "Hybrid", "Regulated", "Recurring revenue", "Public-sector dependent"],
-  scores=dict(demand=8, wtp=8, timing=9, gap=6, unit=7, speed=6, capeff=8, scale=5, feas=5),
+  scores=dict(demand=9, wtp=9, timing=9, gap=6, unit=7, speed=6, capeff=8, scale=5, feas=5),
   confidence="Medium", n_sources=6, assumption="New entrant without security-sector track record can be trusted", wrong="Expertise is scarce for everyone; the bottleneck may be hiring cleared people, not demand.")
 
 O(id=5, name="Civil-preparedness planning software (continuity, stockpiles, krigsplacering, exercises)",
@@ -150,7 +150,7 @@ O(id=7, name="CRA PSIRT-as-a-service + SBOM for SME product makers",
   market="Hundreds to low thousands of Swedish product makers", uncertainty="Buyer awareness; many will wait until 2027",
   validation="Offer CRA readiness assessments to 20 machine builders; 3 paid", origin="Original finding (regulation-driven)",
   tags=["Hybrid", "Regulated", "Recurring revenue", "High international expansion potential"],
-  scores=dict(demand=6, wtp=7, timing=9, gap=6, unit=7, speed=5, capeff=7, scale=7, feas=6),
+  scores=dict(demand=5, wtp=7, timing=8, gap=6, unit=7, speed=5, capeff=7, scale=7, feas=6),
   confidence="Medium", n_sources=4, assumption="SMEs outsource PSIRT rather than ignore", wrong="Tool vendors and certification bodies bundle it; enforcement may be slow.", intl=True)
 
 O(id=8, name="Machinery Regulation CE technical-file automation",
@@ -179,7 +179,7 @@ O(id=9, name="AML/KYC compliance kit for small obliged entities (pre-AMLR 2027)"
   market="~15-20k small obliged entities x SEK 6k = ~SEK 100m/yr", uncertainty="Crowded with existing vendors",
   validation="Landing page to Srf members; 50 sign-ups", origin="Original finding",
   tags=["Software", "Bootstrappable", "Regulated", "Recurring revenue"],
-  scores=dict(demand=5, wtp=4, timing=7, gap=3, unit=6, speed=7, capeff=7, scale=5, feas=7),
+  scores=dict(demand=5, wtp=4, timing=7, gap=2, unit=6, speed=7, capeff=7, scale=5, feas=7),
   confidence="Medium", n_sources=3, assumption="Gap in micro-firm tooling", wrong="Existing vendors and Fortnox modules already serve this cheaply.")
 
 O(id=10, name="AI Act governance & inventory for municipalities and HR-tech users",
@@ -345,7 +345,7 @@ O(id=22, name="Done-for-you bid writing for SMEs in low-competition categories",
   competitors="Tendium, Mercell, bid consultants", capital=200_000, tech="AI drafting", reg="LOU",
   market="~13k bidding firms + non-bidders", uncertainty="Win-rate dependence", validation="Write 5 bids for paying SMEs",
   origin="Foreign model (UK bid-writing) ", tags=["Bootstrappable", "Hybrid"],
-  scores=dict(demand=6, wtp=5, timing=6, gap=5, unit=5, speed=8, capeff=9, scale=4, feas=8),
+  scores=dict(demand=6, wtp=5, timing=6, gap=4, unit=5, speed=8, capeff=9, scale=4, feas=8),
   confidence="Medium", n_sources=3, assumption="SMEs pay per bid", wrong="Commoditised by Tendium AI features.")
 
 O(id=23, name="Public-sector legacy-system exit & migration service",
